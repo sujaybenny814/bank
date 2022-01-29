@@ -1,0 +1,27 @@
+Create Bank
+
+http://localhost:8000/createBank Method - Post
+{
+    "bank_name": "sbi",
+    "ifsc_code": "sbi0000013333",
+    "branch_name": " Sbi 233333",
+    "bank_id": "3456567773"
+
+}
+
+Get Bank 
+
+http://localhost:8000/getAllBank?page=0&limit=30 Method - GET
+
+
+http://localhost:8000/updateBank Method - PATCH
+
+Note :- bank_id is taken as unique so bank_id is required to update
+
+{
+    "ifsc_code": "sbi000001333",
+    "branch_name": "ssss name 9999",
+    "bank_id": "e233333333"
+}
+
+http://localhost:8000/deleteBank/38  Method - DELETE
